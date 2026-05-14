@@ -6,8 +6,8 @@
 <title>GrowlTECH Nitrile RFQ — Vendor Comparison</title>
 <style>
   :root {
-    --red: #FF6B00;
-    --red-dark: #e05a00;
+    --orange: #FF6B00;
+    --orange-dark: #e05a00;
     --black: #1a1a1a;
     --charcoal: #2d2d2d;
     --mid: #555;
@@ -33,7 +33,7 @@
   .header { background: var(--black); padding: 16px 24px; display: flex; align-items: center; justify-content: space-between; }
   .header-left { display: flex; align-items: center; gap: 14px; }
   .growl-wordmark { font-size: 22px; font-weight: 800; color: var(--white); letter-spacing: -0.5px; text-transform: uppercase; }
-  .growl-wordmark span { color: var(--red); }
+  .growl-wordmark span { color: var(--orange); }
   .header-divider { width: 1px; height: 28px; background: #444; }
   .header-title { font-size: 13px; color: #aaa; font-weight: 400; letter-spacing: 0.3px; }
   .header-right { font-size: 11px; color: #666; }
@@ -41,7 +41,7 @@
   /* ── SUMMARY CARDS ── */
   .cards-wrap { background: var(--charcoal); padding: 16px 24px; }
   .cards { display: grid; grid-template-columns: repeat(4, 1fr); gap: 12px; }
-  .card { background: #383838; border-radius: 8px; padding: 14px 16px; border-left: 3px solid var(--red); }
+  .card { background: #383838; border-radius: 8px; padding: 14px 16px; border-left: 3px solid var(--orange); }
   .card-label { font-size: 10px; color: #aaa; text-transform: uppercase; letter-spacing: 0.6px; margin-bottom: 4px; }
   .card-value { font-size: 24px; font-weight: 700; color: var(--white); line-height: 1; }
   .card-sub { font-size: 11px; color: #bbb; margin-top: 4px; }
@@ -52,8 +52,8 @@
   .ctrl-group { display: flex; align-items: center; gap: 6px; }
   .ctrl-label { font-size: 11px; color: var(--muted); text-transform: uppercase; letter-spacing: 0.4px; }
   .btn { font-size: 11px; padding: 5px 12px; border: 1px solid #ddd; border-radius: 20px; background: var(--white); cursor: pointer; color: var(--mid); transition: all 0.15s; font-weight: 500; }
-  .btn:hover { border-color: var(--red); color: var(--red); }
-  .btn.active { background: var(--red); color: var(--white); border-color: var(--red); }
+  .btn:hover { border-color: var(--orange); color: var(--orange); }
+  .btn.active { background: var(--orange); color: var(--white); border-color: var(--orange); }
   .ctrl-divider { width: 1px; height: 20px; background: var(--border); }
 
   /* ── TABLE ── */
@@ -63,7 +63,7 @@
   thead th { font-size: 10px; font-weight: 600; color: #ccc; text-align: left; padding: 10px 10px; text-transform: uppercase; letter-spacing: 0.5px; white-space: nowrap; }
   thead th.sortable { cursor: pointer; }
   thead th.sortable:hover { color: #fff; }
-  thead th.sorted { color: var(--red) !important; }
+  thead th.sorted { color: var(--orange) !important; }
   thead th.sorted::after { content: ' ↓'; }
   thead th.sorted.asc::after { content: ' ↑'; }
   tbody tr { border-bottom: 1px solid #f0f0f0; transition: background 0.1s; }
@@ -174,8 +174,8 @@
     <tr>
       <th>Vendor</th>
       <th>COO / Port</th>
-      <th class="sortable sorted" id="th-price35">3.5 MIL / case ★</th>
-      <th class="sortable" id="th-price5">5 MIL / case ★★</th>
+      <th class="sortable sorted" id="th-price35">3.5MIL / case ★</th>
+      <th class="sortable" id="th-price5">5MIL / case ★★</th>
       <th>Fentanyl Cert</th>
       <th>MOQ</th>
       <th>Lead Time</th>
