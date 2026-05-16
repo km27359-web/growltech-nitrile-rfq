@@ -109,6 +109,11 @@
   .legend-dot   { width: 10px; height: 10px; border-radius: 2px; flex-shrink: 0; }
   .note { font-size: 10px; color: #aaa; padding: 0 24px 16px; }
 
+  /* ── PRICE CHANGE INDICATORS ── */
+  .price-change { display: block; font-size: 9px; font-weight: 600; margin-top: 3px; letter-spacing: 0.2px; }
+  .price-change.down { color: #2e7d32; }
+  .price-change.up   { color: #c62828; }
+
   /* ── EMPTY STATE ── */
   .empty-row td { text-align: center; padding: 32px; color: var(--muted); font-size: 12px; }
 </style>
@@ -270,6 +275,7 @@ const vendors = [
     coo: "Vietnam (Haiphong)", coo_code: "VN",
     fob: "FOB Haiphong",
     price35: 26.00, price5: 33.00,
+    prev35: 28.00, prev5: 35.00,
     fentanyl: "confirmed",
     moq: "100 cases / SKU", leadtime: "July shipment", leadtime_days: 60,
     payment: "30% + 70% pre-shipment",
@@ -294,6 +300,7 @@ const vendors = [
     coo: "Thailand", coo_code: "TH",
     fob: "FOB Songkhla",
     price35: 26.00, price5: 30.00,
+    prev5: 34.00,
     fentanyl: "pending",
     moq: "300 ctn/product; 100/size min", leadtime: "60 days (July)", leadtime_days: 60,
     payment: "TBC",
@@ -377,10 +384,19 @@ function fentanylBadge(s) {
   return '<span class="badge badge-red">✗ Unconfirmed</span>';
 }
 
-function priceCell(price, rank) {
+function priceCell(price, rank, prev) {
   if (price === null) return '<span class="price-na">N/A</span>';
   const cls = `p${Math.min(rank,10)}`;
-  return `<span class="price ${cls}">$${price.toFixed(2)}</span>`;
+  let change = '';
+  if (prev !== undefined && prev !== null) {
+    const diff = price - prev;
+    if (diff < 0) {
+      change = `<span class="price-change down">▼ was $${prev.toFixed(2)}</span>`;
+    } else if (diff > 0) {
+      change = `<span class="price-change up">▲ was $${prev.toFixed(2)}</span>`;
+    }
+  }
+  return `<span class="price ${cls}">$${price.toFixed(2)}</span>${change}`;
 }
 
 function render() {
@@ -402,8 +418,8 @@ function render() {
         <div class="updated-badge">Updated ${v.updated}</div>
       </td>
       <td><div class="coo">${v.coo}</div><div class="fob">${v.fob}</div></td>
-      <td>${priceCell(v.price35, r35[v.name] || 10)}</td>
-      <td>${priceCell(v.price5, r5[v.name] || 10)}</td>
+      <td>${priceCell(v.price35, r35[v.name] || 10, v.prev35)}</td>
+      <td>${priceCell(v.price5, r5[v.name] || 10, v.prev5)}</td>
       <td>${fentanylBadge(v.fentanyl)}</td>
       <td class="detail">${v.moq}</td>
       <td class="detail">${v.leadtime}</td>
