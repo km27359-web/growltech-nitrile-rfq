@@ -32,8 +32,8 @@
   /* ── HEADER ── */
   .header { background: var(--black); padding: 16px 24px; display: flex; align-items: center; justify-content: space-between; }
   .header-left { display: flex; align-items: center; gap: 14px; }
-  .growl-wordmark { font-size: 22px; font-weight: 800; color: var(--white); letter-spacing: -0.5px; text-transform: uppercase; }
-  .growl-wordmark span { color: var(--orange); }
+  .growl-wordmark { font-size: 22px; font-weight: 800; color: var(--orange); letter-spacing: 1px; text-transform: uppercase; }
+  .growl-sub { font-size: 9px; font-weight: 600; color: #888; letter-spacing: 2px; text-transform: uppercase; display: block; margin-top: -2px; }
   .header-divider { width: 1px; height: 28px; background: #444; }
   .header-title { font-size: 13px; color: #aaa; font-weight: 400; letter-spacing: 0.3px; }
   .header-right { font-size: 11px; color: #666; }
@@ -122,7 +122,7 @@
 
 <div class="header">
   <div class="header-left">
-    <div class="growl-wordmark">G<span>R</span>OWL</div>
+    <div class="growl-wordmark">GROWL<span class="growl-sub">PRODUCTS</span></div>
     <div class="header-divider"></div>
     <div class="header-title">GrowlTECH Nitrile Gloves &nbsp;·&nbsp; Vendor RFQ Comparison</div>
   </div>
@@ -179,8 +179,8 @@
     <tr>
       <th>Vendor</th>
       <th>COO / Port</th>
-      <th class="sortable sorted" id="th-price35">3.5MIL / case ★</th>
-      <th class="sortable" id="th-price5">5MIL / case ★★</th>
+      <th class="sortable" id="th-price35">3.5MIL / case ★</th>
+      <th class="sortable sorted" id="th-price5">5MIL / case ★★</th>
       <th>Fentanyl Cert</th>
       <th>MOQ</th>
       <th>Lead Time</th>
