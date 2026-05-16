@@ -138,7 +138,7 @@
     </div>
     <div class="card">
       <div class="card-label">Vendors Quoted</div>
-      <div class="card-value">12</div>
+      <div class="card-value">13</div>
       <div class="card-sub">of 24 contacted · 5 MIL = 90% vol</div>
     </div>
     <div class="card">
@@ -205,6 +205,18 @@
 <script>
 const vendors = [
   {
+    name: "VietGlove",
+    contact: "John Nguyen / Amy Pham",
+    coo: "Vietnam (Ho Chi Minh)", coo_code: "VN",
+    fob: "FOB Ho Chi Minh",
+    price35: 24.70, price5: 30.70,
+    fentanyl: "unconfirmed",
+    moq: "1 × 40HC / SKU", leadtime: "60–70 days", leadtime_days: 65,
+    payment: "30% + 70% BL",
+    updated: "May 14",
+    flags: [["FORM B (US) — Ho Chi Minh port", false], ["Size ratio: L+XL ≤ 50%", false], ["5-day price validity", false], ["⚠️ Fentanyl cert — awaiting confirmation", true]]
+  },
+  {
     name: "Pentawe (FOB China)",
     contact: "Leo — Sales Manager",
     coo: "China (Nanjing)", coo_code: "CN",
@@ -255,14 +267,14 @@ const vendors = [
   {
     name: "Basic Medical",
     contact: "Lauren Zhang",
-    coo: "Vietnam", coo_code: "VN",
+    coo: "Vietnam (Haiphong)", coo_code: "VN",
     fob: "FOB Haiphong",
-    price35: 28.00, price5: 35.00,
+    price35: 26.00, price5: 33.00,
     fentanyl: "confirmed",
-    moq: "10 containers mixed", leadtime: "TBC", leadtime_days: 999,
-    payment: "TBC",
-    updated: "May 5",
-    flags: [["⚠️ May 10 deadline — June production lock", true]]
+    moq: "100 cases / SKU", leadtime: "July shipment", leadtime_days: 60,
+    payment: "30% + 70% pre-shipment",
+    updated: "May 14",
+    flags: [["CPTPP COO — 0% tariff to Canada", false], ["4600 cases/40HQ (3.5MIL) · 3200 cases/40HQ (5MIL)", false], ["Blue, Royal Blue, Black available", false], ["1-week price validity", false], ["⚠️ Was $28/$35 — updated July pricing", false]]
   },
   {
     name: "One Glove Group",
