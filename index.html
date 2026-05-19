@@ -399,7 +399,7 @@ function fentanylBadge(s) {
 }
 
 function priceCell(price, rank, prev) {
-  if (price === null) return '<span class="price-na">N/A</span>';
+  if (price == null) return '<span class="price-na">—</span>';
   const cls = `p${Math.min(rank,10)}`;
   let change = '';
   if (prev !== undefined && prev !== null) {
