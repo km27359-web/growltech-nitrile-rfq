@@ -126,7 +126,7 @@
     <div class="header-divider"></div>
     <div class="header-title">GrowlTECH Nitrile Gloves &nbsp;·&nbsp; Vendor RFQ Comparison</div>
   </div>
-  <div class="header-right">RFQ sent May 5, 2026 &nbsp;·&nbsp; Updated May 14, 2026</div>
+  <div class="header-right">RFQ sent May 5, 2026 &nbsp;·&nbsp; Updated May 19, 2026</div>
 </div>
 
 <div class="cards-wrap">
@@ -157,8 +157,12 @@
 <div class="controls">
   <div class="ctrl-group">
     <span class="ctrl-label">Sort</span>
-    <button class="btn active" onclick="sortBy('price5', this)">5 MIL Price</button>
-    <button class="btn" onclick="sortBy('price35', this)">3.5 MIL Price</button>
+    <button class="btn active" onclick="sortBy('price5', this)">5MIL</button>
+    <button class="btn" onclick="sortBy('price35', this)">3.5MIL</button>
+    <button class="btn" onclick="sortBy('price4', this)">4MIL</button>
+    <button class="btn" onclick="sortBy('price6', this)">6MIL</button>
+    <button class="btn" onclick="sortBy('price6dg', this)">6MIL DG</button>
+    <button class="btn" onclick="sortBy('price8dg', this)">8MIL DG</button>
     <button class="btn" onclick="sortBy('leadtime_days', this)">Lead Time</button>
     <button class="btn" onclick="sortBy('name', this)">Vendor</button>
   </div>
@@ -177,15 +181,23 @@
 <table id="main-table">
   <thead>
     <tr>
-      <th>Vendor</th>
-      <th>COO / Port</th>
-      <th class="sortable" id="th-price35">3.5MIL / case ★</th>
-      <th class="sortable sorted" id="th-price5">5MIL / case ★★</th>
-      <th>Fentanyl Cert</th>
-      <th>MOQ</th>
-      <th>Lead Time</th>
-      <th>Payment</th>
-      <th>Notes / Flags</th>
+      <th rowspan="2" style="vertical-align:bottom;">Vendor</th>
+      <th rowspan="2" style="vertical-align:bottom;">COO / Port</th>
+      <th colspan="4" style="text-align:center;border-bottom:1px solid #555;color:#aaa;font-size:9px;letter-spacing:1px;">REGULAR NITRILE</th>
+      <th colspan="2" style="text-align:center;border-bottom:1px solid #555;color:#f4a534;font-size:9px;letter-spacing:1px;border-left:2px solid #555;">DIAMOND GRIP</th>
+      <th rowspan="2" style="vertical-align:bottom;">Fentanyl</th>
+      <th rowspan="2" style="vertical-align:bottom;">MOQ</th>
+      <th rowspan="2" style="vertical-align:bottom;">Lead Time</th>
+      <th rowspan="2" style="vertical-align:bottom;">Payment</th>
+      <th rowspan="2" style="vertical-align:bottom;">Notes / Flags</th>
+    </tr>
+    <tr>
+      <th class="sortable" id="th-price35">3.5MIL</th>
+      <th class="sortable" id="th-price4">4MIL</th>
+      <th class="sortable sorted" id="th-price5">5MIL ★</th>
+      <th class="sortable" id="th-price6">6MIL</th>
+      <th class="sortable" id="th-price6dg" style="border-left:2px solid #555;">6MIL DG</th>
+      <th class="sortable" id="th-price8dg">8MIL DG</th>
     </tr>
   </thead>
   <tbody id="tbody"></tbody>
@@ -205,7 +217,7 @@
   <span class="legend-item"><span class="legend-dot" style="background:#e57373"></span>9th</span>
   <span class="legend-item"><span class="legend-dot" style="background:#d32f2f"></span>10th+</span>
 </div>
-<p class="note">★ = 10% of volume &nbsp;·&nbsp; ★★ = 90% of volume (priority SKU) &nbsp;·&nbsp; All prices per 1,000 pcs / case (100 pcs × 10 boxes) FOB &nbsp;·&nbsp; Summary cards show best price among fentanyl-confirmed vendors only</p>
+<p class="note">★ = priority SKU (90% vol) &nbsp;·&nbsp; All prices per 1,000 pcs / case (100 pcs × 10 boxes) FOB &nbsp;·&nbsp; DG = Diamond Grip &nbsp;·&nbsp; Summary cards show best fentanyl-confirmed prices &nbsp;·&nbsp; Updated May 19, 2026</p>
 
 <script>
 const vendors = [
@@ -262,7 +274,7 @@ const vendors = [
     contact: "Dato' Jerel Soo — CEO",
     coo: "Malaysia", coo_code: "MY",
     fob: "FOB Port Klang",
-    price35: 27.50, price5: 32.00,
+    price35: 27.50, price4: 30.00, price5: 32.00,
     fentanyl: "confirmed",
     moq: "~1 × 40ft HC/SKU", leadtime: "35 days", leadtime_days: 35,
     payment: "70% dep + 30% pre-load",
@@ -299,20 +311,20 @@ const vendors = [
     contact: "Tippawan P. — Sales Mgr",
     coo: "Thailand", coo_code: "TH",
     fob: "FOB Songkhla",
-    price35: 26.00, price5: 30.00,
+    price35: 26.00, price5: 30.00, price6dg: 50.00, price8dg: 56.00,
     prev5: 34.00,
     fentanyl: "pending",
     moq: "300 ctn/product; 100/size min", leadtime: "60 days (July)", leadtime_days: 60,
     payment: "TBC",
-    updated: "May 7",
-    flags: [["Non-medical price shown; medical +$1.00", false], ["5 MIL revised ↓ from $34 → $30", false], ["XL–XXL +$1.00/case", false], ["⚠️ Fentanyl 'claimed' — cert not yet provided", true], ["Growl private brand supported ✓", false]]
+    updated: "May 19",
+    flags: [["Non-medical price shown; medical +$1.00", false], ["5 MIL revised ↓ from $34 → $30", false], ["DG: 6MIL 6.5g Black · 8MIL 8.6g Black/Orange", false], ["DG pricing reduced $2 for July", false], ["XXL +$2.50/case (DG)", false], ["⚠️ Fentanyl 'claimed' — cert not yet provided", true], ["Growl private brand supported ✓", false]]
   },
   {
     name: "Top Glove",
     contact: "Grace Cheong",
     coo: "Malaysia", coo_code: "MY",
     fob: "FOB Port Klang",
-    price35: 29.00, price5: 36.50,
+    price35: 29.00, price4: 31.50, price5: 36.50,
     fentanyl: "confirmed",
     moq: "1 × 40' per SKU", leadtime: "Jun '26 ETD", leadtime_days: 55,
     payment: "TBC",
@@ -372,11 +384,13 @@ const vendors = [
 let sortKey = 'price5', sortAsc = true, activeFilter = 'all';
 
 function getRanks(arr, key) {
-  const sorted = [...arr].filter(v => v[key] !== null).sort((a,b) => a[key]-b[key]);
+  const sorted = [...arr].filter(v => v[key] != null).sort((a,b) => a[key]-b[key]);
   const ranks = {};
   sorted.forEach((v,i) => ranks[v.name] = i+1);
   return ranks;
 }
+
+function p(v, key) { return v[key] != null ? v[key] : null; }
 
 function fentanylBadge(s) {
   if (s === 'confirmed') return '<span class="badge badge-green">✓ Confirmed</span>';
@@ -400,8 +414,12 @@ function priceCell(price, rank, prev) {
 }
 
 function render() {
-  const r35 = getRanks(vendors, 'price35');
-  const r5  = getRanks(vendors, 'price5');
+  const r35  = getRanks(vendors, 'price35');
+  const r4   = getRanks(vendors, 'price4');
+  const r5   = getRanks(vendors, 'price5');
+  const r6   = getRanks(vendors, 'price6');
+  const r6dg = getRanks(vendors, 'price6dg');
+  const r8dg = getRanks(vendors, 'price8dg');
   const sorted = [...vendors].sort((a,b) => {
     let av = a[sortKey] ?? 9999, bv = b[sortKey] ?? 9999;
     if (typeof av === 'string') return sortAsc ? av.localeCompare(bv) : bv.localeCompare(av);
@@ -419,7 +437,11 @@ function render() {
       </td>
       <td><div class="coo">${v.coo}</div><div class="fob">${v.fob}</div></td>
       <td>${priceCell(v.price35, r35[v.name] || 10, v.prev35)}</td>
-      <td>${priceCell(v.price5, r5[v.name] || 10, v.prev5)}</td>
+      <td>${priceCell(v.price4,  r4[v.name]  || 10, v.prev4)}</td>
+      <td>${priceCell(v.price5,  r5[v.name]  || 10, v.prev5)}</td>
+      <td>${priceCell(v.price6,  r6[v.name]  || 10, v.prev6)}</td>
+      <td style="border-left:2px solid #e8e8e8;">${priceCell(v.price6dg, r6dg[v.name] || 10, v.prev6dg)}</td>
+      <td>${priceCell(v.price8dg, r8dg[v.name] || 10, v.prev8dg)}</td>
       <td>${fentanylBadge(v.fentanyl)}</td>
       <td class="detail">${v.moq}</td>
       <td class="detail">${v.leadtime}</td>
@@ -434,7 +456,7 @@ function sortBy(key, btn) {
   document.querySelectorAll('.controls .btn').forEach(b => { if(['price5','price35','leadtime_days','name'].some(k=>b.onclick?.toString().includes(k))) b.classList.remove('active'); });
   btn.classList.add('active');
   document.querySelectorAll('thead th').forEach(th => th.classList.remove('sorted','asc'));
-  const thMap = {price35:'th-price35', price5:'th-price5'};
+  const thMap = {price35:'th-price35', price4:'th-price4', price5:'th-price5', price6:'th-price6', price6dg:'th-price6dg', price8dg:'th-price8dg'};
   if (thMap[key]) { const th = document.getElementById(thMap[key]); th.classList.add('sorted'); if(sortAsc) th.classList.add('asc'); }
   render();
 }
