@@ -233,30 +233,6 @@ const vendors = [
     flags: [["FORM B (US) — Ho Chi Minh port", false], ["Size ratio: L+XL ≤ 50%", false], ["5-day price validity", false], ["⚠️ Fentanyl cert — awaiting confirmation", true]]
   },
   {
-    name: "Pentawe (FOB China)",
-    contact: "Leo — Sales Manager",
-    coo: "China (Nanjing)", coo_code: "CN",
-    fob: "FOB China",
-    price35: 26.00, price5: 28.80,
-    fentanyl: "unavailable",
-    moq: "TBC", leadtime: "TBC", leadtime_days: 999,
-    payment: "TBC",
-    updated: "May 19",
-    flags: [["Blue $26.00 / Black $26.50 (3.5 MIL)", false], ["Blue $28.80 / Black $29.90 (5 MIL)", false], ["❌ Fentanyl cert not available — confirmed May 19", true]]
-  },
-  {
-    name: "Pentawe (FOB Malaysia)",
-    contact: "Leo — Sales Manager",
-    coo: "Malaysia (Melaka)", coo_code: "MY",
-    fob: "FOB Malaysia",
-    price35: 29.00, price5: 31.80,
-    fentanyl: "unavailable",
-    moq: "TBC", leadtime: "TBC", leadtime_days: 999,
-    payment: "TBC",
-    updated: "May 19",
-    flags: [["Blue $29.00 / Black $29.50 (3.5 MIL)", false], ["Blue $31.80 / Black $32.90 (5 MIL)", false], ["❌ Fentanyl cert not available — confirmed May 19", true]]
-  },
-  {
     name: "Kanglongda",
     contact: "Spirit",
     coo: "Vietnam (confirmed)", coo_code: "VN",
@@ -400,7 +376,32 @@ const vendors = [
     moq: "1 × 40HC / SKU", leadtime: "40–45 days", leadtime_days: 42,
     payment: "50% dep + 50% BL",
     updated: "May 20"
+  },
+  {
+    name: "Pentawe (FOB China)",
+    contact: "Leo — Sales Manager",
+    coo: "China (Nanjing)", coo_code: "CN",
+    fob: "FOB China",
+    price35: 26.00, price5: 28.80,
+    fentanyl: "unavailable",
+    moq: "TBC", leadtime: "TBC", leadtime_days: 999,
+    payment: "TBC",
+    updated: "May 19",
+    flags: [["Blue $26.00 / Black $26.50 (3.5 MIL)", false], ["Blue $28.80 / Black $29.90 (5 MIL)", false], ["❌ Fentanyl cert not available — confirmed May 19", true]]
+  },
+  {
+    name: "Pentawe (FOB Malaysia)",
+    contact: "Leo — Sales Manager",
+    coo: "Malaysia (Melaka)", coo_code: "MY",
+    fob: "FOB Malaysia",
+    price35: 29.00, price5: 31.80,
+    fentanyl: "unavailable",
+    moq: "TBC", leadtime: "TBC", leadtime_days: 999,
+    payment: "TBC",
+    updated: "May 19",
+    flags: [["Blue $29.00 / Black $29.50 (3.5 MIL)", false], ["Blue $31.80 / Black $32.90 (5 MIL)", false], ["❌ Fentanyl cert not available — confirmed May 19", true]]
   }
+
 ];
 
 let sortKey = 'price5', sortAsc = true, activeFilter = 'all';
