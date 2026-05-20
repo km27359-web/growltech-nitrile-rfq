@@ -433,6 +433,9 @@ function render() {
   const r6dg = getRanks(vendors, 'price6dg');
   const r8dg = getRanks(vendors, 'price8dg');
   const sorted = [...vendors].sort((a,b) => {
+    const aOut = a.fentanyl === 'unavailable' ? 1 : 0;
+    const bOut = b.fentanyl === 'unavailable' ? 1 : 0;
+    if (aOut !== bOut) return aOut - bOut;
     let av = a[sortKey] ?? 9999, bv = b[sortKey] ?? 9999;
     if (typeof av === 'string') return sortAsc ? av.localeCompare(bv) : bv.localeCompare(av);
     return sortAsc ? av-bv : bv-av;
