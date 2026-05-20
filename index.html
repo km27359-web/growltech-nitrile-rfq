@@ -3,7 +3,7 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>GrowlTECH Nitrile RFQ â Vendor Comparison</title>
+<title>GrowlTECH Nitrile RFQ — Vendor Comparison</title>
 <style>
   :root {
     --orange: #FF6B00;
@@ -29,7 +29,7 @@
   * { box-sizing: border-box; margin: 0; padding: 0; }
   body { font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif; background: var(--bg); color: var(--black); font-size: 13px; }
 
-  /* ââ HEADER ââ */
+  /* ── HEADER ── */
   .header { background: var(--black); padding: 16px 24px; display: flex; align-items: center; justify-content: space-between; }
   .header-left { display: flex; align-items: center; gap: 14px; }
   .growl-wordmark { font-size: 22px; font-weight: 800; color: var(--orange); letter-spacing: 1px; text-transform: uppercase; }
@@ -38,7 +38,7 @@
   .header-title { font-size: 13px; color: #aaa; font-weight: 400; letter-spacing: 0.3px; }
   .header-right { font-size: 11px; color: #666; }
 
-  /* ââ SUMMARY CARDS ââ */
+  /* ── SUMMARY CARDS ── */
   .cards-wrap { background: var(--charcoal); padding: 16px 24px; }
   .cards { display: grid; grid-template-columns: repeat(4, 1fr); gap: 12px; }
   .card { background: #383838; border-radius: 8px; padding: 14px 16px; border-left: 3px solid var(--orange); }
@@ -47,7 +47,7 @@
   .card-sub { font-size: 11px; color: #bbb; margin-top: 4px; }
   .card-caveat { font-size: 10px; color: #f4a534; margin-top: 3px; }
 
-  /* ââ CONTROLS ââ */
+  /* ── CONTROLS ── */
   .controls { padding: 14px 24px; background: var(--white); border-bottom: 1px solid var(--border); display: flex; gap: 20px; align-items: center; flex-wrap: wrap; }
   .ctrl-group { display: flex; align-items: center; gap: 6px; }
   .ctrl-label { font-size: 11px; color: var(--muted); text-transform: uppercase; letter-spacing: 0.4px; }
@@ -56,7 +56,7 @@
   .btn.active { background: var(--orange); color: var(--white); border-color: var(--orange); }
   .ctrl-divider { width: 1px; height: 20px; background: var(--border); }
 
-  /* ââ TABLE ââ */
+  /* ── TABLE ── */
   .table-wrap { padding: 16px 24px; overflow-x: auto; }
   table { width: 100%; border-collapse: collapse; background: var(--white); border-radius: 10px; overflow: hidden; box-shadow: 0 1px 4px rgba(0,0,0,.07); font-size: 12px; }
   thead { background: var(--charcoal); }
@@ -64,8 +64,8 @@
   thead th.sortable { cursor: pointer; }
   thead th.sortable:hover { color: #fff; }
   thead th.sorted { color: var(--orange) !important; }
-  thead th.sorted::after { content: ' â'; }
-  thead th.sorted.asc::after { content: ' â'; }
+  thead th.sorted::after { content: ' ↓'; }
+  thead th.sorted.asc::after { content: ' ↑'; }
   tbody tr { border-bottom: 1px solid #f0f0f0; transition: background 0.1s; }
   tbody tr:last-child { border-bottom: none; }
   tbody tr:hover { background: #fafafa; }
@@ -102,19 +102,19 @@
 
   .detail { font-size: 11px; color: var(--mid); line-height: 1.5; }
 
-  /* ââ FOOTER ââ */
+  /* ── FOOTER ── */
   .footer { padding: 12px 24px 24px; display: flex; gap: 16px; flex-wrap: wrap; align-items: center; }
   .legend-label { font-size: 10px; color: var(--muted); text-transform: uppercase; letter-spacing: 0.4px; }
   .legend-item  { display: flex; align-items: center; gap: 4px; font-size: 10px; color: var(--mid); }
   .legend-dot   { width: 10px; height: 10px; border-radius: 2px; flex-shrink: 0; }
   .note { font-size: 10px; color: #aaa; padding: 0 24px 16px; }
 
-  /* ââ PRICE CHANGE INDICATORS ââ */
+  /* ── PRICE CHANGE INDICATORS ── */
   .price-change { display: block; font-size: 9px; font-weight: 600; margin-top: 3px; letter-spacing: 0.2px; }
   .price-change.down { color: #2e7d32; }
   .price-change.up   { color: #c62828; }
 
-  /* ââ EMPTY STATE ââ */
+  /* ── EMPTY STATE ── */
   .empty-row td { text-align: center; padding: 32px; color: var(--muted); font-size: 12px; }
 </style>
 </head>
@@ -124,27 +124,27 @@
   <div class="header-left">
     <div class="growl-wordmark">GROWL<span class="growl-sub">PRODUCTS</span></div>
     <div class="header-divider"></div>
-    <div class="header-title">GrowlTECH Nitrile Gloves &nbsp;Â·&nbsp; Vendor RFQ Comparison</div>
+    <div class="header-title">GrowlTECH Nitrile Gloves &nbsp;·&nbsp; Vendor RFQ Comparison</div>
   </div>
-  <div class="header-right">RFQ sent May 5, 2026 &nbsp;Â·&nbsp; Updated May 19, 2026</div>
+  <div class="header-right">RFQ sent May 5, 2026 &nbsp;·&nbsp; Updated May 19, 2026</div>
 </div>
 
 <div class="cards-wrap">
   <div class="cards">
     <div class="card">
-      <div class="card-label">Best 5 MIL â Fentanyl â</div>
+      <div class="card-label">Best 5 MIL — Fentanyl ✓</div>
       <div class="card-value">$32.60</div>
-      <div class="card-sub">Kanglongda Â· FOB Danang</div>
+      <div class="card-sub">Kanglongda · FOB Danang</div>
     </div>
     <div class="card">
-      <div class="card-label">Best 3.5 MIL â Fentanyl â</div>
+      <div class="card-label">Best 3.5 MIL — Fentanyl ✓</div>
       <div class="card-value">$26.80</div>
-      <div class="card-sub">Kanglongda Â· FOB Danang</div>
+      <div class="card-sub">Kanglongda · FOB Danang</div>
     </div>
     <div class="card">
       <div class="card-label">Vendors Quoted</div>
       <div class="card-value">15</div>
-      <div class="card-sub">of 24 contacted Â· 5 MIL = 90% vol</div>
+      <div class="card-sub">of 24 contacted · 5 MIL = 90% vol</div>
     </div>
     <div class="card">
       <div class="card-label">Decision Deadline</div>
@@ -170,7 +170,7 @@
   <div class="ctrl-group">
     <span class="ctrl-label">Filter</span>
     <button class="btn active" onclick="filterBy('all', this)">All</button>
-    <button class="btn" onclick="filterBy('fentanyl', this)">Fentanyl â Only</button>
+    <button class="btn" onclick="filterBy('fentanyl', this)">Fentanyl ✓ Only</button>
     <button class="btn" onclick="filterBy('MY', this)">Malaysia</button>
     <button class="btn" onclick="filterBy('VN', this)">Vietnam</button>
     <button class="btn" onclick="filterBy('TH', this)">Thailand</div>
@@ -193,7 +193,7 @@
     <tr>
       <th class="sortable" id="th-price35">3.5MIL</th>
       <th class="sortable" id="th-price4">4MIL</th>
-      <th class="sortable sorted" id="th-price5">5MIL â</th>
+      <th class="sortable sorted" id="th-price5">5MIL ★</th>
       <th class="sortable" id="th-price6">6MIL</th>
       <th class="sortable" id="th-price6dg" style="border-left:2px solid #555;">6MIL DG</th>
       <th class="sortable" id="th-price8dg">8MIL DG</th>
@@ -204,7 +204,7 @@
 </div>
 
 <div class="footer">
-  <span class="legend-label">Price rank â</span>
+  <span class="legend-label">Price rank →</span>
   <span class="legend-item"><span class="legend-dot" style="background:#b9f6ca"></span>1st</span>
   <span class="legend-item"><span class="legend-dot" style="background:#ccff90"></span>2nd</span>
   <span class="legend-item"><span class="legend-dot" style="background:#e6ee9c"></span>3rd</span>
@@ -216,7 +216,7 @@
   <span class="legend-item"><span class="legend-dot" style="background:#e57373"></span>9th</span>
   <span class="legend-item"><span class="legend-dot" style="background:#d32f2f"></span>10th+</span>
 </div>
-<p class="note">â = priority SKU (90% vol) &nbsp;Â·&nbsp; All prices per 1,000 pcs / case (100 pcs Ã 10 boxes) FOB &nbsp;Â·&nbsp; DG = Diamond Grip &nbsp;Â·&nbsp; Summary cards show best fentanyl-confirmed prices &nbsp;Â·&nbsp; Updated May 19, 2026</p>
+<p class="note">★ = priority SKU (90% vol) &nbsp;·&nbsp; All prices per 1,000 pcs / case (100 pcs × 10 boxes) FOB &nbsp;·&nbsp; DG = Diamond Grip &nbsp;·&nbsp; Summary cards show best fentanyl-confirmed prices &nbsp;·&nbsp; Updated May 19, 2026</p>
 
 <script>
 const vendors = [
@@ -227,14 +227,14 @@ const vendors = [
     fob: "FOB Ho Chi Minh",
     price35: 24.70, price5: 30.70,
     fentanyl: "confirmed",
-    moq: "1 Ã 40HC / SKU", leadtime: "60â70 days", leadtime_days: 65,
+    moq: "1 × 40HC / SKU", leadtime: "60–70 days", leadtime_days: 65,
     payment: "30% + 70% BL",
     updated: "May 14",
-    flags: [["FORM B (US) â Ho Chi Minh port", false], ["Size ratio: L+XL â¤ 50%", false], ["5-day price validity", false], ["â ï¸ Fentanyl cert â awaiting confirmation", true]]
+    flags: [["FORM B (US) — Ho Chi Minh port", false], ["Size ratio: L+XL ≤ 50%", false], ["5-day price validity", false], ["⚠️ Fentanyl cert — awaiting confirmation", true]]
   },
   {
     name: "Pentawe (FOB China)",
-    contact: "Leo â Sales Manager",
+    contact: "Leo — Sales Manager",
     coo: "China (Nanjing)", coo_code: "CN",
     fob: "FOB China",
     price35: 26.00, price5: 28.80,
@@ -242,11 +242,11 @@ const vendors = [
     moq: "TBC", leadtime: "TBC", leadtime_days: 999,
     payment: "TBC",
     updated: "May 7",
-    flags: [["Blue $26.00 / Black $26.50 (3.5 MIL)", false], ["Blue $28.80 / Black $29.90 (5 MIL)", false], ["â ï¸ Fentanyl controlled in China â mandatory, in discussion", true]]
+    flags: [["Blue $26.00 / Black $26.50 (3.5 MIL)", false], ["Blue $28.80 / Black $29.90 (5 MIL)", false], ["⚠️ Fentanyl controlled in China — mandatory, in discussion", true]]
   },
   {
     name: "Pentawe (FOB Malaysia)",
-    contact: "Leo â Sales Manager",
+    contact: "Leo — Sales Manager",
     coo: "Malaysia (Melaka)", coo_code: "MY",
     fob: "FOB Malaysia",
     price35: 29.00, price5: 31.80,
@@ -254,7 +254,7 @@ const vendors = [
     moq: "TBC", leadtime: "TBC", leadtime_days: 999,
     payment: "TBC",
     updated: "May 7",
-    flags: [["Blue $29.00 / Black $29.50 (3.5 MIL)", false], ["Blue $31.80 / Black $32.90 (5 MIL)", false], ["â ï¸ Fentanyl cert â mandatory, in discussion", true]]
+    flags: [["Blue $29.00 / Black $29.50 (3.5 MIL)", false], ["Blue $31.80 / Black $32.90 (5 MIL)", false], ["⚠️ Fentanyl cert — mandatory, in discussion", true]]
   },
   {
     name: "Kanglongda",
@@ -263,22 +263,22 @@ const vendors = [
     fob: "FOB Danang",
     price35: 26.80, price5: 32.60,
     fentanyl: "confirmed",
-    moq: "1 Ã 40HQ", leadtime: "90â120 days", leadtime_days: 105,
+    moq: "1 × 40HQ", leadtime: "90–120 days", leadtime_days: 105,
     payment: "30% + 70% BL",
     updated: "May 5",
     flags: [["FORM B (US) + CPTPP (Canada)", false], ["Fentanyl test report incoming", false], ["Size-ratio adjusted prices", false]]
   },
   {
     name: "Worldex Medic",
-    contact: "Dato' Jerel Soo â CEO",
+    contact: "Dato' Jerel Soo — CEO",
     coo: "Malaysia", coo_code: "MY",
     fob: "FOB Port Klang",
     price35: 27.50, price4: 30.00, price5: 32.00,
     fentanyl: "confirmed",
-    moq: "~1 Ã 40ft HC/SKU", leadtime: "35 days", leadtime_days: 35,
+    moq: "~1 × 40ft HC/SKU", leadtime: "35 days", leadtime_days: 35,
     payment: "70% dep + 30% pre-load",
     updated: "May 7",
-    flags: [["Best 3.5 MIL: $27.50 (~3.8-4g)", false], ["4 MIL also available: $30.00 (~4.2â4.5g)", false], ["5 MIL from original quote", false], ["Validity ~May 14", false]]
+    flags: [["Best 3.5 MIL: $27.50 (~3.8-4g)", false], ["4 MIL also available: $30.00 (~4.2–4.5g)", false], ["5 MIL from original quote", false], ["Validity ~May 14", false]]
   },
   {
     name: "Basic Medical",
@@ -291,7 +291,7 @@ const vendors = [
     moq: "100 cases / SKU", leadtime: "July shipment", leadtime_days: 60,
     payment: "30% + 70% pre-shipment",
     updated: "May 14",
-    flags: [["CPTPP COO â 0% tariff to Canada", false], ["4600 cases/40HQ (3.5MIL) Â· 3200 cases/40HQ (5MIL)", false], ["Blue, Royal Blue, Black available", false], ["1-week price validity", false], ["â ï¸ Was $28/$35 â updated July pricing", false]]
+    flags: [["CPTPP COO — 0% tariff to Canada", false], ["4600 cases/40HQ (3.5MIL) · 3200 cases/40HQ (5MIL)", false], ["Blue, Royal Blue, Black available", false], ["1-week price validity", false], ["⚠️ Was $28/$35 — updated July pricing", false]]
   },
   {
     name: "One Glove Group",
@@ -300,14 +300,14 @@ const vendors = [
     fob: "FOB Port Klang",
     price35: 28.30, price5: 38.20,
     fentanyl: "confirmed",
-    moq: "2 Ã 40ft per SKU", leadtime: "30â40 days", leadtime_days: 35,
+    moq: "2 × 40ft per SKU", leadtime: "30–40 days", leadtime_days: 35,
     payment: "50% dep + 50% pre-ship",
     updated: "May 5",
     flags: [["5 MIL ready stock available", false]]
   },
   {
     name: "Mercator Medical TH",
-    contact: "Tippawan P. â Sales Mgr",
+    contact: "Tippawan P. — Sales Mgr",
     coo: "Thailand", coo_code: "TH",
     fob: "FOB Songkhla",
     price35: 26.00, price5: 30.00, price6dg: 50.00, price8dg: 56.00,
@@ -316,8 +316,7 @@ const vendors = [
     moq: "300 ctn/product; 100/size min", leadtime: "60 days (July)", leadtime_days: 60,
     payment: "TBC",
     updated: "May 19",
-    flags: [["Non-medical price shown; medical +
-$1.00", false], ["5 MIL revised â from $34 â $30", false], ["DG: 6MIL&¶.5g Black Â· 8MIL 8.6g Black/Orange", false], ["DG pricing reduced $2 for July", false], ["XXL +$2.50/case (DG)", false], ["â ï¸ Fentanyl 'claimed' â cert not yet provided", true]]
+    flags: [["Non-medical price shown; medical +$1.00", false], ["5 MIL revised ↓ from $34 → $30", false], ["DG: 6MIL 6.5g Black · 8MIL:8.6g Black/Orange", false], ["DG pricing reduced $2 for July", false], ["XXL +$2.50/case (DG)", false], ["⚠️ Fentanyl 'claimed' — cert not yet provided", true]]
   },
   {
     name: "Top Glove",
@@ -326,14 +325,14 @@ $1.00", false], ["5 MIL revised â from $34 â $30", false], ["DG: 6MIL&
     fob: "FOB Port Klang",
     price35: 29.00, price4: 31.50, price5: 36.50,
     fentanyl: "confirmed",
-    moq: "1 Ã 40' per SKU", leadtime: "Jun '26 ETD", leadtime_days: 55,
+    moq: "1 × 40' per SKU", leadtime: "Jun '26 ETD", leadtime_days: 55,
     payment: "TBC",
     updated: "May 7",
     flags: [["4 MIL also available @ $31.50", false], ["5 MIL = Finger Tex (USEW50)", false]]
   },
   {
     name: "Bergamot",
-    contact: "Adryana â Export Sales",
+    contact: "Adryana — Export Sales",
     coo: "Malaysia (Kajang)", coo_code: "MY",
     fob: "FOB Port Klang",
     price35: 30.00, price5: 39.70,
@@ -341,19 +340,19 @@ $1.00", false], ["5 MIL revised â from $34 â $30", false], ["DG: 6MIL&
     moq: "20GP; 400 ctn/product min", leadtime: "Jun '26 ship", leadtime_days: 55,
     payment: "30% adv + 70% 2wk pre-ship",
     updated: "May 7",
-    flags: [["ASTM D6978 cert attached â", false], ["â ï¸ 5 MIL = Palm Textured (we need Finger)", true], ["OEM $600/artwork", false], ["Validity May 11", false]]
+    flags: [["ASTM D6978 cert attached ✓", false], ["⚠️ 5 MIL = Palm Textured (we need Finger)", true], ["OEM $600/artwork", false], ["Validity May 11", false]]
   },
   {
-    name: "Kov'Gan",
+    name: "Kossan",
     contact: "Nathalie Tan",
     coo: "Malaysia", coo_code: "MY",
     fob: "FOB Port Klang",
     price35: 29.50, price5: 42.50,
     fentanyl: "unconfirmed",
-    moq: "Min 1 Ã 40ft FCL", leadtime: "50â60 days (1st)", leadtime_days: 55,
+    moq: "Min 1 × 40ft FCL", leadtime: "50–60 days (1st)", leadtime_days: 55,
     payment: "TT 60 days BL",
     updated: "May 5",
-    flags: [["Fentanyl cert not confirmed", false], ["â ï¸ Validity ~May 10", true]]
+    flags: [["Fentanyl cert not confirmed", false], ["⚠️ Validity ~May 10", true]]
   },
   {
     name: "DPL / Hicare Thai",
@@ -365,19 +364,19 @@ $1.00", false], ["5 MIL revised â from $34 â $30", false], ["DG: 6MIL&
     moq: "3M pcs (~3 containers)", leadtime: "60 days (1st)", leadtime_days: 60,
     payment: "30% + 70% copy docs",
     updated: "May 5",
-    flags: [["â ï¸ High MOQ â 3M pcs minimum", true]]
+    flags: [["⚠️ High MOQ — 3M pcs minimum", true]]
   },
   {
     name: "Sri Trang Gloves TH",
-    contact: "Tanatya (Oum) â Export Sales Mgr",
+    contact: "Tanatya (Oum) — Export Sales Mgr",
     coo: "Thailand (Bangkok)", coo_code: "TH",
     fob: "FOB Thailand",
     price35: 29.00,
     fentanyl: "unconfirmed",
-    moq: "TBC â awaiting volume info", leadtime: "TBC", leadtime_days: 999,
+    moq: "TBC — awaiting volume info", leadtime: "TBC", leadtime_days: 999,
     payment: "TBC",
     updated: "May 19",
-    flags: [["June price only â July pricing pending volume", false], ["4MIL, 5MIL, 6MIL pricing TBC", false], ["â ï¸ Fentanyl cert â"not confirmed", true]]
+    flags: [["June price only — July pricing pending volume", false], ["4MIL, 5MIL, 6MIL pricing TBC", false], ["⚠️ Fentanyl cert —"not confirmed", true]]
   },
   {
     name: "Innovative Geoves",
@@ -386,7 +385,7 @@ $1.00", false], ["5 MIL revised â from $34 â $30", false], ["DG: 6MIL&
     fob: "FOB Songkhla",
     price35: null, price5: 55.00,
     fentanyl: "unconfirmed",
-    moq: "10 Ã 40ft capable", leadtime: "TBC", leadtime_days: 999,
+    moq: "10 × 40ft capable", leadtime: "TBC", leadtime_days: 999,
     payment: "30% + 70% pre-arrival",
     updated: "May 5",
     flags: [["No 3.5 MIL produced", false], ["Polymer-coated (not chlorinated)", false], ["Highest price", false]]
@@ -398,7 +397,7 @@ $1.00", false], ["5 MIL revised â from $34 â $30", false], ["DG: 6MIL&
     fob: "FOB Cat Lai Port",
     price35: 27.20, price4: 29.50, price5: 35.00, price6: 39.50,
     fentanyl: "confirmed",
-    moq: "1 Ã 40HC / SKU", leadtime: "40â45 days", leadtime_days: 42,
+    moq: "1 × 40HC / SKU", leadtime: "40–45 days", leadtime_days: 42,
     payment: "50% dep + 50% BL",
     updated: "May 20"
   }
@@ -416,22 +415,22 @@ function getRanks(arr, key) {
 function p(v, key) { return v[key] != null ? v[key] : null; }
 
 function fentanylBadge(s) {
-  if (s === 'confirmed')   return '<span class="badge badge-green">â Confirmed</span>';
-  if (s === 'pending')     return '<span class="badge badge-amber">â³ Pending</span>';
-  if (s === 'unavailable') return '<span class="badge badge-red">â Not Available</span>';
-  return '<span class="badge badge-red">â Unconfirmed</span>';
+  if (s === 'confirmed')   return '<span class="badge badge-green">✓ Confirmed</span>';
+  if (s === 'pending')     return '<span class="badge badge-amber">⏳ Pending</span>';
+  if (s === 'unavailable') return '<span class="badge badge-red">✗ Not Available</span>';
+  return '<span class="badge badge-red">✗ Unconfirmed</span>';
 }
 
 function priceCell(price, rank, prev) {
-  if (price == null) return '<span class="price-na">â</span>';
+  if (price == null) return '<span class="price-na">—</span>';
   const cls = `p${Math.min(rank,10)}`;
   let change = '';
   if (prev !== undefined && prev !== null) {
     const diff = price - prev;
     if (diff < 0) {
-      change = `<span class="price-change down">æ¼ was $${prev.toFixed(2)}</span>`;
+      change = `<span class="price-change down">▼ was $${prev.toFixed(2)}</span>`;
     } else if (diff > 0) {
-      change = `<span class="price-change up">æ² was $${prev.toFixed(2)}</span>`;
+      change = `<span class="price-change up">□ was $${prev.toFixed(2)}</span>`;
     }
   }
   return `<span class="price ${cls}">$${price.toFixed(2)}</span>${change}`;
